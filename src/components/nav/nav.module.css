@@ -1,0 +1,23 @@
+.nav {
+  grid-area: n;
+  background-color: #5eaba7;
+  border-radius: 0 0 0 20px;
+  padding: 20px;
+}
+.item {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item:hover {
+  box-shadow: 0 0 5px 2px grey;
+  background-color: #356462;
+}
+.nav a {
+  text-decoration: none;
+  color: whitesmoke;
+}

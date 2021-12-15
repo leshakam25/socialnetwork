@@ -1,0 +1,27 @@
+.img {
+  height: auto;
+  width: 100%;
+  box-shadow: 0 0 5px 2px grey;
+  border-radius: 20px;
+}
+
+.prof img {
+  max-height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 2px grey;
+  margin: 0 2% 2% 0;
+  float: left;
+}
+.prof {
+  box-shadow: 0 0 5px 2px grey;
+  border-radius: 20px;
+  padding: 5%;
+  margin-top: 5%;
+}
+.who {
+  display: flex;
+  flex-direction: column;
+}
+.who div {
+  padding: 2%;
+}

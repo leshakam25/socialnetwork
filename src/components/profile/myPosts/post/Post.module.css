@@ -1,0 +1,27 @@
+.post img {
+  width: 80px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 2px grey;
+  margin-bottom: 5%;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  box-shadow: 0 0 5px 2px grey;
+  border-radius: 20px;
+  margin: 3% 0 3% 0;
+  padding: 5%;
+}
+.post:hover {
+  box-shadow: 0 0 15px 12px grey;
+}
+.post button {
+  width: 40px;
+  margin-left: 1%;
+  border-radius: 20px;
+}
+.mes {
+  padding: 5% 0 2% 0;
+}

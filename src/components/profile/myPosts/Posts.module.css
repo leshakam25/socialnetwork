@@ -1,0 +1,26 @@
+.posts {
+  box-shadow: 0 0 5px 2px grey;
+  border-radius: 20px;
+  margin-top: 5%;
+  padding: 5%;
+}
+
+.area textarea {
+  width: 95%;
+  height: 100px;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  box-shadow: 0 0 5px 2px grey;
+  font-family: inherit;
+  font-size: inherit;
+  overflow: auto;
+  border: none;
+  padding: 20px;
+}
+.area textarea:focus {
+  box-shadow: 0 0 15px 12px grey;
+  border: none;
+}
+.area button {
+  border-radius: 20px;
+}
