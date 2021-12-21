@@ -50,7 +50,7 @@ let store = {
       this._state.profile.newPostText = "";
       this._callSubscriber(this._state);
     } else if (action.type === "UPDATE-NEW-POST-TEXT") {
-      this._state.profile.newPostText = action.newText;
+      this._state.profile.newPostText = action.text;
       this._callSubscriber(this._state);
     }
   },
