@@ -13,7 +13,7 @@ function Chat(props) {
     <div className={classes.chat}>
       <div className={classes.chatWindow}></div>
       <div className={classes.chatFoot}>
-        <input className={classes.inputData} ref={newMessage} type="text" />
+        <textarea ref={newMessage} />
         <button onClick={addMessage}>Send</button>
       </div>
     </div>

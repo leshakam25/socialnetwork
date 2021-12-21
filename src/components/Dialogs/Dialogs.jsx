@@ -13,6 +13,10 @@ function Dialogs(props) {
     <Message text={m.text} />
   ));
 
+  let addPost = () => {
+    props.addPost();
+  };
+
   return (
     <div className={classes.dialogs}>
       <div className={classes.dialogsItems}>{dialogsElements}</div>
