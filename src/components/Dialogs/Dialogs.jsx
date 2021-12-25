@@ -5,23 +5,21 @@ import Message from "./Message/Message";
 import Chat from "./Chat/Chat";
 
 function Dialogs(props) {
-  let dialogsElements = props.dialogsData.map((d) => (
+  let state = props.store.getState().dialogs;
+
+  let dialogsElements = props.dialogs.dialogsData.map((d) => (
     <DialogItem name={d.name} id={d.id} />
   ));
 
-  let messagesElements = props.messagesData.map((m) => (
+  let messagesElements = props.dialogs.messagesData.map((m) => (
     <Message text={m.text} />
   ));
-
-  let addPost = () => {
-    props.addPost();
-  };
 
   return (
     <div className={classes.dialogs}>
       <div className={classes.dialogsItems}>{dialogsElements}</div>
       <div className={classes.messages}>{messagesElements}</div>
-      <Chat />
+      <Chat newMessageBody={props.newMessageBody} dispatch={props.dispatch} />
     </div>
   );
 }
