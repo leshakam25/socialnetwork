@@ -11,8 +11,9 @@ function Chat(props) {
   let newMessageBody = props.newMessageBody;
 
   let onNewMessageChange = (e) => {
-    let body = e.target.value;
-    props.dispatch(updateNewMessageBodyCreator(body));
+    let body = e.current.value;
+    let action = updateNewMessageBodyCreator(body);
+    props.dispatch(action);
   };
 
   let onSendMessageClick = () => {
