@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./Dialogs.module.css";
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
-import Chat from "./Chat/Chat";
 
 function Dialogs(props) {
   let state = props.store.getState().dialogs;
@@ -19,7 +18,13 @@ function Dialogs(props) {
     <div className={classes.dialogs}>
       <div className={classes.dialogsItems}>{dialogsElements}</div>
       <div className={classes.messages}>{messagesElements}</div>
-      <Chat newMessageBody={props.newMessageBody} dispatch={props.dispatch} />
+      <div className={classes.chat}>
+        <div className={classes.chatWindow}></div>
+        <div className={classes.chatFoot}>
+          <textarea />
+          <button>Send</button>
+        </div>
+      </div>
     </div>
   );
 }

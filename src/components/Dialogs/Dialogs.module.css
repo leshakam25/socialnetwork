@@ -58,6 +58,7 @@
   height: 50%;
   margin-bottom: 20px;
   padding: 10px;
+  resize: none;
 }
 .chatFoot button {
   height: 50%;
