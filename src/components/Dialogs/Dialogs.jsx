@@ -6,11 +6,11 @@ import Message from "./Message/Message";
 function Dialogs(props) {
   let state = props.store.getState().dialogs;
 
-  let dialogsElements = props.dialogs.dialogsData.map((d) => (
+  let dialogsElements = state.dialogsData.map((d) => (
     <DialogItem name={d.name} id={d.id} />
   ));
 
-  let messagesElements = props.dialogs.messagesData.map((m) => (
+  let messagesElements = state.messagesData.map((m) => (
     <Message text={m.text} />
   ));
 
@@ -18,13 +18,6 @@ function Dialogs(props) {
     <div className={classes.dialogs}>
       <div className={classes.dialogsItems}>{dialogsElements}</div>
       <div className={classes.messages}>{messagesElements}</div>
-      <div className={classes.chat}>
-        <div className={classes.chatWindow}></div>
-        <div className={classes.chatFoot}>
-          <textarea />
-          <button>Send</button>
-        </div>
-      </div>
     </div>
   );
 }
