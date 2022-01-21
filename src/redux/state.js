@@ -29,7 +29,6 @@ let store = {
         { id: 3, text: "bye" },
         { id: 4, text: "lets start" },
       ],
-      newMessageBody: "",
     },
   },
   getState() {
