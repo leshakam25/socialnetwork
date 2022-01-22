@@ -21,7 +21,7 @@ function Dialogs(props) {
   let newMessageBody = state.newMessageBody;
 
   let onSendMessageClick = () => {
-    if (newMessageBody === "") alert("DVedeno pustoe");
+    if (newMessageBody === "") alert("Введено пустое сообщение");
     else props.store.dispatch(sendMessageCreator());
   };
 
