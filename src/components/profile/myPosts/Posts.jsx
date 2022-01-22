@@ -4,7 +4,7 @@ import classes from "./Posts.module.css";
 import {
   addPostActionCreator,
   updateNewPostTextActionCreator,
-} from "../../../redux/state";
+} from "../../../redux/profileReducer";
 
 function Posts(props) {
   let postsElements = props.postData.map((p) => (

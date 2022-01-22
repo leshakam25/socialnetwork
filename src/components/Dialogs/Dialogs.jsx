@@ -5,7 +5,7 @@ import Message from "./Message/Message";
 import {
   updateNewMessageBodyCreator,
   sendMessageCreator,
-} from "../../redux/state";
+} from "../../redux/dialogsReducer";
 
 function Dialogs(props) {
   let state = props.store.getState().dialogs;
