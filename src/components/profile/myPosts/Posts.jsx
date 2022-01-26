@@ -14,13 +14,15 @@ function Posts(props) {
   let newPostElement = React.createRef();
 
   let addPost = () => {
-    props.dispatch(addPostActionCreator());
+    props.addPost();
+    // props.dispatch(addPostActionCreator());
   };
 
   let onPostChange = () => {
     let text = newPostElement.current.value;
-    let action = updateNewPostTextActionCreator(text);
-    props.dispatch(action);
+    props.updateNewPostText(text);
+    // let action = updateNewPostTextActionCreator(text);
+    // props.dispatch(action);
   };
 
   return (
