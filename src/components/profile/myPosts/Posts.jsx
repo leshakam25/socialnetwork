@@ -4,7 +4,7 @@ import classes from "./Posts.module.css";
 
 function Posts(props) {
   let postsElements = props.postData.map((p) => (
-    <Post name={p.names} likeCount={p.likeCount} message={p.message} />
+    <Post name={p.name} likeCount={p.likeCount} message={p.message} />
   ));
 
   let newPostElement = React.createRef();
