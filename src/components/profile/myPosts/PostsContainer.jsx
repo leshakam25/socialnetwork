@@ -21,7 +21,7 @@ function PostsContainer(props) {
     <Posts
       updateNewPostText={onPostChange}
       addPost={addPost}
-      postData={props.postData}
+      postData={state.postData}
       newPostText={state.newPostText}
     />
   );

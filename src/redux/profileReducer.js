@@ -4,13 +4,14 @@ const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 let initialState = {
   postData: [
     {
-      names: "Danny",
+      name: "Danny",
       id: 0,
       message: "Hi, bird, how are you?!",
       likeCount: "15",
     },
     { names: "Danny", id: 1, message: "Lets fire", likeCount: "10" },
   ],
+  newPostText: "",
 };
 
 const profileReducer = (state = initialState, action) => {
